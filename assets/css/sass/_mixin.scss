@@ -1,0 +1,56 @@
+//Mixin's e variaveis
+$primary-color: #000;
+$secondary-color: #fff;
+
+@mixin grid {
+  max-width: 90%;
+  margin: auto;
+}
+@mixin d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin font-titulos {
+  @media (min-width: 1025px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 1024px) {
+    font-size: 2.25rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
+}
+@mixin font-textos {
+  @media (max-width: 1024px) {
+    font-size: 1.25rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
+}
+@mixin margin-secao {
+  @media (min-width: 1025px) {
+    margin-top: 128px;
+  }
+  @media (max-width: 1024px) {
+    margin-top: 64px;
+  }
+}
+
+@mixin primary-button {
+  @include hover-primary-button;
+  @include font-textos;
+  background-color: #cc0000;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  display: inline-block;
+  transition: 0.3s;
+}
+@mixin hover-primary-button {
+  &:hover {
+    background-color: #a60000;
+  }
+}

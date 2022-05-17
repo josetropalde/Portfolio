@@ -1,0 +1,81 @@
+@import "mixin";
+.secao-footer {
+  background: #d3d3d3;
+  padding: 2rem 0;
+}
+.cont-footer {
+  color: #fff;
+  @include grid;
+  text-align: center;
+}
+.cont-footer div {
+  margin: 4rem 0;
+}
+.cont-footer ul li {
+  margin: 1rem 0;
+}
+.logo-footer img {
+  margin: auto;
+}
+.redes-footer a svg {
+  font-size: 1.75rem;
+  margin: 0 0.5rem;
+}
+.redes-footer a svg:hover {
+  color: #303030;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+@media (min-width: 1025px) {
+  .cont-footer {
+    @include d-flex;
+    text-align: start;
+  }
+  .nav-footer nav ul {
+    @include d-flex;
+  }
+  .nav-footer nav ul li {
+    margin: 0 0.5rem;
+  }
+  .nav-footer nav ul li a {
+    transition: 0.3s;
+  }
+  .nav-footer nav ul li a:hover {
+    color: #303030;
+  }
+}
+//Super footer
+.secao-super-footer {
+  background: #383838;
+}
+.cont-super-footer {
+  color: #fff;
+  @include grid;
+}
+.cont-super-footer div {
+  padding: 1rem 0;
+}
+.politica-super-footer a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+  display: block;
+  margin: 1rem 0;
+}
+
+@media (min-width: 1025px) {
+  .cont-super-footer {
+    @include d-flex;
+  }
+  .w8-info-super-footer,
+  .w8-super-footer {
+    width: 40%;
+  }
+  .politica-super-footer a {
+    display: unset;
+    margin: 0 1rem;
+  }
+  .w8-super-footer {
+    text-align: end;
+  }
+}
