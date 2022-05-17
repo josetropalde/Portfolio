@@ -1,13 +1,11 @@
 window.addEventListener("load", () => {
-  new Glider(document.querySelector(".itens-1-home"), {
+  new Glider(document.querySelector(".itens-portfolio"), {
     slidesToShow: 1,
     slidesToScroll: 1,
     scrollLock: false,
-    arrows: false,
-    dots: ".dots-secao1-home",
     arrows: {
-      prev: ".glider-prev-secao1-home",
-      next: ".glider-next-secao1-home",
+      prev: ".glider-prev-portfolio",
+      next: ".glider-next-portfolio",
     },
     responsive: [
       {
