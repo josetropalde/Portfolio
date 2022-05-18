@@ -23,7 +23,7 @@
 .text-introduction a {
   @include primary-button;
 }
-.txt-portfolio {
+.txt-portfolio h1 {
   margin: 2rem 0;
   @include font-titulos;
 }
@@ -85,7 +85,7 @@
   font-size: 1.25rem;
   margin-left: 0.25rem;
 }
-.txt-services {
+.txt-services h1 {
   margin: 2rem 0;
   @include font-titulos;
 }
@@ -112,6 +112,9 @@
 .cont-portfolio {
   @include grid;
 }
+.itens-portfolio {
+  padding: 2rem 0;
+}
 .item-portfolio {
   margin: 0 1rem;
   box-shadow: 1px 2px 5px rgba($color: #000, $alpha: 0.2);
@@ -122,7 +125,7 @@
 .item-portfolio a {
   @include primary-button;
   padding: 0.5rem 1rem;
-  margin: 0 1rem;
+  margin: 1rem;
   border-radius: 10px;
   font-size: 1rem;
 }
@@ -155,5 +158,85 @@
   .glider-next-portfolio {
     font-size: 2.5rem;
     right: 1.5rem;
+  }
+}
+//Contact
+.section-contact {
+  @include margin-secao;
+}
+.cont-contact {
+  @include grid;
+}
+.txt-contact h1 {
+  @include font-titulos;
+}
+.info-contact {
+  margin-top: 2rem;
+}
+.item-contact {
+  @include d-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+.item-contact svg {
+  font-size: 1.75rem;
+  margin-right: 1rem;
+}
+.item-contact div p {
+  color: #707070;
+}
+.form-contact input {
+  border: none;
+  background: #c9c9c9;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  color: #4e4e4e;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+.form-contact input::placeholder {
+  color: #4e4e4e;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+.form-contact textarea {
+  border: none;
+  background: #c9c9c9;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  color: #4e4e4e;
+  font-family: "Poppins", sans-serif;
+  resize: none;
+  font-size: 1rem;
+}
+.form-contact textarea::placeholder {
+  color: #4e4e4e;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+.form-contact button {
+  @include primary-button;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.form-contact button svg {
+  margin-left: 0.25rem;
+}
+@media (min-width: 1025px) {
+  .contact-contact {
+    @include d-flex;
+    align-items: flex-start;
+    margin-top: 4rem;
+  }
+  .info-contact,
+  .form-contact {
+    width: 50%;
   }
 }

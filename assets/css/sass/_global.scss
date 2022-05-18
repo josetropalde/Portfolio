@@ -4,6 +4,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,7 +12,6 @@ body {
   margin: 0px;
   font-size: 1.125rem;
   color: #000;
-  overflow-x: hidden;
   background: #fff;
 }
 
@@ -38,20 +38,4 @@ a {
 img {
   max-width: 100%;
   display: block;
-}
-
-.loader {
-  width: 100%;
-  height: 100vh;
-  background: #000 url(../../img/loader.gif) no-repeat center center;
-  background-size: 40%;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-}
-@media (min-width: 1025px) {
-  .loader {
-    background-size: 15%;
-  }
 }
