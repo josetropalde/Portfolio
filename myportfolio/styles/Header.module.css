@@ -1,3 +1,94 @@
 .header {
-  display: flex;
+  position: relative;
+  padding: 2rem 5%;
+  text-align: end;
+}
+.header__menu {
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  height: 0;
+  overflow: hidden;
+  background: #dc2626;
+  border-radius: 10px;
+  transition: .6s;
+  @apply shadow-md;
+}
+.header__mobile .header__menu {
+  height: 216px;
+}
+.header__menu ul li {
+  margin: 1.5rem ;
+  position: relative;
+}
+.header__toggle {
+  position: absolute;
+  display: block;
+  width: 1.875rem;
+  border-top: .1875rem solid #dc2626;
+  transition: 0.3s;
+  cursor: pointer;
+  right: 5%;
+  top: 25px;
+}
+.header__toggle:after,
+.header__toggle::before {
+  position: relative;
+  content: "";
+  display: block;
+  width: 1.875rem;
+  height: .1875rem;
+  background: #dc2626;
+  margin-top: 8px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.header__mobile .header__toggle{
+  border-top: none;
+}
+.header__mobile .header__toggle::before {
+  transform: rotate(135deg);
+}
+.header__mobile .header__toggle::after {
+  transform: rotate(-135deg);
+  top: -11px;
+}
+@media (min-width: 1025px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 15%;  text-align: start;
+  }
+  .header__menu {
+    position: unset;
+    background: unset;
+    transition: unset;
+    height: unset;
+    overflow: unset;
+  }
+  .header__menu ul {
+    display: flex;
+  }
+  .header__menu ul li {
+    margin: 0 2rem;
+    position: relative;
+  }
+  .header__menu ul li a::after {
+    content: "";
+    width: 0;
+    background: #dc2626;
+    height: 3px;
+    display: block;
+    position: absolute;
+    transition: .3s;
+  }
+  .header__menu ul li a:hover {
+color: #e5e5e5;
+  }
+  .header__menu ul li a:hover::after {
+    width: 100%;
+  }
+  .header__toggle {
+    display: none;
+  }
 }

@@ -1,13 +1,11 @@
 import Head from "next/head";
 import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
-import Main from "../src/components/Main";
-import styles from "../styles/Home.module.css";
-export default function Home() {
+export default function Portfolio() {
   return (
     <div>
       <Head>
-        <title>Home | Quem sou eu</title>
+        <title>Portfólio | Meu trabalho</title>
         <meta name="description" content="Conheça meu trabalho" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -15,7 +13,7 @@ export default function Home() {
       <Header />
 
       <main>
-        <Main />
+        <h1>portfolio</h1>
       </main>
 
       <Footer />
