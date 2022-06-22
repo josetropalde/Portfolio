@@ -13,7 +13,6 @@ export default function Main() {
           officiis magnam veritatis, ipsam reiciendis.
         </p>
       </div>
-      <div className={styles.main__background}>Bem-vindo</div>
     </section>
   );
 }

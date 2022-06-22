@@ -58,6 +58,10 @@
     display: flex;
     justify-content: center;
     padding: 3rem 15%;  text-align: start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
   .header__menu {
     position: unset;
