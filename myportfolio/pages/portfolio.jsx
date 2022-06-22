@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
+import Work from "../src/components/Work";
 export default function Portfolio() {
   return (
     <div>
@@ -13,7 +14,7 @@ export default function Portfolio() {
       <Header />
 
       <main>
-        <h1>portfolio</h1>
+        <Work />
       </main>
 
       <Footer />

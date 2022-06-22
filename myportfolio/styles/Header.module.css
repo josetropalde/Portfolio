@@ -1,7 +1,12 @@
 .header {
   position: relative;
   padding: 2rem 5%;
-  text-align: end;
+  text-align: end;   
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #18181b;
 }
 .header__menu {
   position: absolute;
@@ -57,11 +62,9 @@
   .header {
     display: flex;
     justify-content: center;
-    padding: 3rem 15%;  text-align: start;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    padding: 3rem 15%;  
+    text-align: start;
+ 
   }
   .header__menu {
     position: unset;

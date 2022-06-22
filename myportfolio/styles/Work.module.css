@@ -1,0 +1,13 @@
+.portfolio {
+  padding: 8rem 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 17.5rem);
+  justify-content: center;
+  gap: .5rem;
+}
+@media (min-width: 1025px) {
+  .portfolio {
+    padding: 12rem 5%;
+    grid-template-columns: repeat(auto-fill, 25rem);
+  }
+}
