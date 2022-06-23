@@ -16,7 +16,7 @@
   font-size: .875rem;
   margin-top: 1.5rem;
 }
-@media (orientation:landscape) {
+@media (max-width: 1024px) and (orientation:landscape) {
   .main {
     background: none;
     margin-bottom: 10rem ;
