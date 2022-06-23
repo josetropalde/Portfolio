@@ -7,9 +7,24 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Home | Quem sou eu</title>
+        {" "}
         <meta name="description" content="Conheça meu trabalho" />
         <link rel="icon" href="/favicon.ico" />
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="description"
+          content="Sou desenvolvedor Front-end e aqui apresento alguns projetos em que fiz parte na minha carreira"
+        />
+        <meta property="og:image" content="/ogimage.png" />
+        <meta property="og:image:secure_url" content="/ogimage.png" />
+        <meta name="twitter:image" content="/ogimage.png" />
+        <meta name="twitter:image:src" content="/ogimage.png" />
+        <meta
+          property="og:description"
+          content="Sou desenvolvedor Front-end e aqui apresento alguns projetos em que fiz parte na minha carreira"
+        />
+        <title>Home | Quem sou eu</title>
       </Head>
 
       <Header />

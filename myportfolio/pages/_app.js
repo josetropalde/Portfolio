@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Toaster } from "react-hot-toast";
 import "../styles/globals.css";
 
 function App({ Component, pageProps, router }) {
@@ -16,6 +17,7 @@ function App({ Component, pageProps, router }) {
         },
       }}
     >
+      <Toaster position="top-right" />
       <Component {...pageProps} />
     </motion.div>
   );
