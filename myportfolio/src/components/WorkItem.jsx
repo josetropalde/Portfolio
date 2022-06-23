@@ -1,11 +1,11 @@
 import styles from "../../styles/WorkItem.module.css";
-
+import Image from "next/image";
 export default function WorkItem(props) {
   const { image, title, description, tech, url } = props;
   return (
     <div>
       <div className={styles.portfolio__item}>
-        <img src={image} alt={title} />
+        <Image src={image} alt={title} />
         <div className={styles.portfolio__text}>
           <div>
             <h2>{title}</h2>
@@ -17,7 +17,7 @@ export default function WorkItem(props) {
                 })}
               </ul>
             </div>
-            <a href={url} target="_blank">
+            <a href={url} rel="noreferrer" target="_blank">
               Conheça
             </a>
           </div>
