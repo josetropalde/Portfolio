@@ -22,11 +22,6 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/habilidades">
-              <a>Habilidades</a>
-            </Link>
-          </li>
-          <li>
             <Link href="/contato">
               <a>Contato</a>
             </Link>

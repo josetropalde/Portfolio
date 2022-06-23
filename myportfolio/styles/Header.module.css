@@ -3,6 +3,7 @@
   padding: 2rem 5%;
   text-align: end;   
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   width: 100%;
@@ -20,7 +21,7 @@
   @apply shadow-md;
 }
 .header__mobile .header__menu {
-  height: 216px;
+  height: 168px;
 }
 .header__menu ul li {
   margin: 1.5rem ;
@@ -64,7 +65,6 @@
     justify-content: center;
     padding: 3rem 15%;  
     text-align: start;
- 
   }
   .header__menu {
     position: unset;

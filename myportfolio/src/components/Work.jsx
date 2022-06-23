@@ -9,6 +9,7 @@ export default function Work() {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       tech: [{ name: "html" }, { name: "sass" }, { name: "javascript" }],
       url: "#",
+      key: 1,
     },
     {
       image: "https://via.placeholder.com/400x400",
@@ -16,6 +17,7 @@ export default function Work() {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       tech: [{ name: "html" }, { name: "sass" }, { name: "javascript" }],
       url: "#",
+      key: 2,
     },
     {
       image: "https://via.placeholder.com/400x400",
@@ -23,6 +25,7 @@ export default function Work() {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       tech: [{ name: "html" }, { name: "sass" }, { name: "javascript" }],
       url: "#",
+      key: 3,
     },
     {
       image: "https://via.placeholder.com/400x400",
@@ -30,6 +33,7 @@ export default function Work() {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       tech: [{ name: "html" }, { name: "sass" }, { name: "javascript" }],
       url: "#",
+      key: 4,
     },
     {
       image: "https://via.placeholder.com/400x400",
@@ -37,6 +41,7 @@ export default function Work() {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       tech: [{ name: "html" }, { name: "sass" }, { name: "javascript" }],
       url: "#",
+      key: 5,
     },
   ];
 
@@ -51,6 +56,7 @@ export default function Work() {
               description={item.description}
               tech={item.tech}
               url={item.url}
+              key={item.key}
             />
           );
         })}

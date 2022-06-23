@@ -4,8 +4,12 @@ export default function Main() {
   return (
     <section className={styles.main}>
       <div className={styles.main__content}>
-        <h1>
-          Meu nome é José Henrique, <br />e eu sou Desenvolvedor Web
+        <h1 data-text="Desenvolvedor Web Desenvolvedor Web ">
+          <span>
+            Meu <br />
+            nome é <br />
+            José Henrique
+          </span>
         </h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat Lorem

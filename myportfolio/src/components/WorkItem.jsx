@@ -17,7 +17,9 @@ export default function WorkItem(props) {
                 })}
               </ul>
             </div>
-            <a href={url}>Saiba mais</a>
+            <a href={url} target="_blank">
+              Conheça
+            </a>
           </div>
         </div>
       </div>
