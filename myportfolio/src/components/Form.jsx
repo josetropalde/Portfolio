@@ -1,6 +1,6 @@
 export default function Form() {
   return (
-    <div className="mt-48 text-center px-4">
+    <div className="mt-20 lg:mt-48 text-center px-4">
       <h1>
         Mande uma mensagem agora mesmo ou envie um email se preferir{" "}
         <a href="mailto:josehenrique.tropalde@gmail.com" className="font-bold">

@@ -27,8 +27,9 @@
   background-color: #dc2626;
   padding: .5rem 1rem;
   border-radius: 1rem;
-font-size: .875rem;
+  font-size: .875rem;
   display: inline-block;
+  @apply shadow-md;
 }
 .portfolio__technology ul {
   display: flex;
@@ -43,6 +44,7 @@ font-size: .875rem;
   text-align: center;
   font-size: 12px;
   display: inline-block;
+  @apply shadow-md;
 }
 @media (min-width: 1025px) {
   .portfolio__item img {

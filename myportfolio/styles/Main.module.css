@@ -2,14 +2,14 @@
   padding: 0 5%;  
   height: 100vh;
   background: url(../public/background-home.png) no-repeat;
-  background-position: center calc(100% - 75px);
+  background-position: center calc(100% - 50px);
   background-size: 100%;
 }
 .main__content h1 {
   font-size: 3rem;
   font-weight: 900;
   line-height: 70px;
-  padding-top: 8rem;
+  padding-top: 4.5rem;
   letter-spacing: -2px;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
 }
@@ -19,7 +19,7 @@
 }
 @media (min-width: 600px) {
   .main {
-    background-position: center calc(100% - 65px);
+    background-position: center calc(100% - 45px);
   }
   .main__content h1 {
     font-size: 4.5rem;
@@ -28,7 +28,7 @@
 @media (min-width: 1025px) {
   .main {
     padding: 0 15%;
-    background-position: center 95%;
+    background-position: center calc(95% + 10px);
   }
   .main__content h1 {
     font-size: 6rem;
