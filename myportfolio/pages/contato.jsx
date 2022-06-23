@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Footer from "../src/components/Footer";
+import Form from "../src/components/Form";
 import Header from "../src/components/Header";
 
-export default function contato() {
+export default function Contato() {
   return (
     <div>
       <Head>
@@ -14,7 +15,7 @@ export default function contato() {
       <Header />
 
       <main>
-        <h1>contato</h1>
+        <Form />
       </main>
 
       <Footer />
