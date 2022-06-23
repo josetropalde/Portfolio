@@ -8,7 +8,6 @@ export default function Home() {
     <div>
       <Head>
         <meta name="description" content="Conheça meu trabalho" />
-        <link rel="icon" href="/favicon.ico" />
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
