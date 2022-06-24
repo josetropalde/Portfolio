@@ -19,7 +19,7 @@ export default async (req, res) => {
   try {
     const { senderMail, userName, content } = req.body;
 
-    if (!senderMail.trim() || !userName.trim() || !content.trim()) {
+    if (!senderMail || !userName || !content) {
       return res.status(403).send("");
     }
 
