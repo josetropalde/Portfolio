@@ -1,15 +1,19 @@
 import nodemailer from "nodemailer";
-import sendgridTransport from "nodemailer-sendgrid-transport";
 
 const email = process.env.MAILADRESS;
 
-const transporter = nodemailer.createTransport(
-  sendgridTransport({
-    auth: {
-      api_key: process.env.SENDGRID_API_KEY,
-    },
-  })
-);
+const transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
+  auth: {
+    user: process.env.MAILADRESS,
+    pass: process.env.MAILPASSWORD,
+  },
+  tls: {
+    rejectUnauthorized: false,
+  },
+});
 
 export default async (req, res) => {
   try {
@@ -22,7 +26,7 @@ export default async (req, res) => {
     const message = {
       from: email,
       to: email,
-      subject: `Conta via site de ${userName}`,
+      subject: `Contato via site de ${userName}`,
       html: `<p><b>Email:</b> ${senderMail}<br/><b>Mensagem:</b> ${content}</p>`,
       replyTo: senderMail,
     };
