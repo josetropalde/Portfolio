@@ -1,4 +1,5 @@
 import styles from "../../styles/Main.module.css";
+import Link from "next/link";
 
 export default function Main() {
   return (
@@ -12,9 +13,14 @@ export default function Main() {
           </span>
         </h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat Lorem
-          ipsum dolor, sit amet consectetur adipisicing elit. Fugiat facere
-          officiis magnam veritatis, ipsam reiciendis.
+          Desenvolvedor Web, Mobile e UI/UX Designer, viciado em codar e
+          resolver problemas de forma eficiente <b>(nada de gambiarra)</b> desde
+          2021
+        </p>
+        <p>
+          Aqui você pode conferir <Link href="/portfolio">o meu trabalho</Link>{" "}
+          e se gostar e tiver interesse,{" "}
+          <Link href="/contato">entrar em contato</Link>
         </p>
       </div>
     </section>

@@ -21,7 +21,7 @@ export default function Home() {
         <meta name="twitter:image:src" content="/ogimage.png" />
         <meta
           property="og:description"
-          content="Sou desenvolvedor Front-end e aqui apresento alguns projetos em que fiz parte na minha carreira"
+          content="Sou desenvolvedor Front-end e aqui apresento alguns projetos que fizeram parte da minha carreira"
         />
         <title>Home | Quem sou eu</title>
       </Head>

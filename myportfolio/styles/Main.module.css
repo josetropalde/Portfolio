@@ -2,8 +2,9 @@
   padding: 4.5rem 5%;  
   height: 100vh;
   background: url(../public/background-home.png) no-repeat;
-  background-position: center calc(100% - 50px);
+  background-position: center calc(100% - 18px);
   background-size: 100%;
+  margin-bottom: 2rem;
 }
 .main__content h1 {
   font-size: 3rem;
@@ -15,6 +16,18 @@
 .main__content p {
   font-size: .875rem;
   margin-top: 1.5rem;
+  color: #c6c6c6;
+}
+.main__content p a {
+  background-color: #3f3f46;
+  border-radius: .5rem;
+  padding: .5rem;
+  transition: .3s;
+ font-weight: bold;
+ display: inline-block;
+}
+.main__content p a:hover {
+  background-color: #52525b;
 }
 @media (max-width: 1024px) and (orientation:landscape) {
   .main {
@@ -25,6 +38,7 @@
 @media (min-width: 600px) {
   .main {
     background-position: center calc(100% - 45px);
+    margin-bottom: 0;
   }
   .main__content h1 {
     font-size: 4.5rem;
@@ -41,13 +55,13 @@
     padding-top: 10rem;
   }
 }
+
 .main__content h1  {
   display: inline-block;
   color: #fff;
   z-index: 2;
   filter: drop-shadow(0 1px 1px);
 }
-
 
 .main__content  {
   position: relative;
