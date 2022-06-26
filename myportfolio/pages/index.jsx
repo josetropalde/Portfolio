@@ -13,7 +13,7 @@ export default function Home() {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="description"
-          content="Sou desenvolvedor Front-end e aqui apresento alguns projetos em que fiz parte na minha carreira"
+          content="Sou desenvolvedor Front-end e aqui apresento alguns projetos que fizeram parte da minha carreira"
         />
         <meta property="og:image" content="/ogimage.png" />
         <meta property="og:image:secure_url" content="/ogimage.png" />

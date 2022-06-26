@@ -7,7 +7,7 @@ export default function Portfolio() {
     <div>
       <Head>
         <title>Portfólio | Meu trabalho</title>
-        <meta name="description" content="Conheça meu trabalho" />
+        <meta name="description" content="Alguns projetos" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

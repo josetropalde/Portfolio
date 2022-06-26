@@ -8,7 +8,7 @@ export default function Contato() {
     <div>
       <Head>
         <title>Contato | Pode me chamar</title>
-        <meta name="description" content="Conheça meu trabalho" />
+        <meta name="description" content="Me mande uma mensagem" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
