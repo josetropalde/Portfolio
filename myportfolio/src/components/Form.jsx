@@ -35,7 +35,7 @@ export default function Form() {
         },
       });
     } catch (err) {
-      toast("Ocorreu um erro inesperado. Entre em contato de outra forma", {
+      toast("Ocorreu um erro inesperado. Tente outra forma!", {
         style: {
           background: "#f87171",
           color: "#fff",

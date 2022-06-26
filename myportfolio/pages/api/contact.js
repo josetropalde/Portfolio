@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
 
 export default async (req, res) => {
   try {
-    const { senderMail, userName, content } = req.body;
+    const { senderMail, userName, content } = JSON.parse(req.body);
 
     const message = {
       from: email,
@@ -34,7 +34,7 @@ export default async (req, res) => {
         console.log("Message sent", info);
       }
     });
-    return res.send("");
+    return res.status(200).json({ status: "Ok" });
   } catch (err) {
     return res.json({
       error: true,
