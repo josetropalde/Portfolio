@@ -8,6 +8,7 @@ export default function Home() {
     <div>
       <Head>
         <meta name="description" content="Conheça meu trabalho" />
+        <meta name="title" content="Desenvolvedor Web"></meta>
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -15,10 +16,10 @@ export default function Home() {
           name="description"
           content="Sou desenvolvedor Front-end e aqui apresento alguns projetos que fizeram parte da minha carreira"
         />
-        <meta property="og:image" content="/ogimage.png" />
-        <meta property="og:image:secure_url" content="/ogimage.png" />
-        <meta name="twitter:image" content="/ogimage.png" />
-        <meta name="twitter:image:src" content="/ogimage.png" />
+        <meta property="og:image" content="/public/ogimage.png" />
+        <meta property="og:image:secure_url" content="/public/ogimage.png" />
+        <meta name="twitter:image" content="/public/ogimage.png" />
+        <meta name="twitter:image:src" content="/public/ogimage.png" />
         <meta
           property="og:description"
           content="Sou desenvolvedor Front-end e aqui apresento alguns projetos que fizeram parte da minha carreira"
