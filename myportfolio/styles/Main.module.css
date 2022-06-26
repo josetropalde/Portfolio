@@ -2,7 +2,7 @@
   padding: 4.5rem 5%;  
   height: 100vh;
   background: url(../public/background-home.png) no-repeat;
-  background-position: center calc(100% - 55px);
+  background-position: center calc(100% - 25px);
   background-size: 100%;
   margin-bottom: 2rem;
 }
