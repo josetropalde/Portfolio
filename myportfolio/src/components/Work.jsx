@@ -4,42 +4,64 @@ import WorkItem from "./WorkItem";
 export default function Work() {
   const workData = [
     {
-      image: "https://via.placeholder.com/400x400",
-      title: "Projeto 1",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      tech: [{ name: "html" }, { name: "sass" }, { name: "javascript" }],
-      url: "#",
+      image: "/project/util.png",
+      title: "Útilfornos",
+      description: "Uma solução E-commerce para venda de fornos industriais",
+      tech: [
+        { name: "html/sass" },
+        { name: "e-commerce" },
+        { name: "javascript" },
+      ],
+      nork: true,
+      url: "https://util.ind.br/",
       key: 1,
     },
     {
-      image: "https://via.placeholder.com/400x400",
-      title: "Projeto 1",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      tech: [{ name: "html" }, { name: "sass" }, { name: "javascript" }],
-      url: "#",
+      image: "/project/wecivil.png",
+      title: "WE Cívil",
+      description: "Engenharia e construção personalizadas",
+      tech: [
+        { name: "html/css" },
+        { name: "wordpress" },
+        { name: "javascript" },
+      ],
+      nork: true,
+      url: "https://wecivil.com.br/",
       key: 2,
     },
     {
       image: "https://via.placeholder.com/400x400",
-      title: "Projeto 1",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      tech: [{ name: "html" }, { name: "sass" }, { name: "javascript" }],
+      title: "myBills",
+      description:
+        "Aplicativo mobile para nunca mais esquecer de pagar um boleto",
+      tech: [{ name: "react" }, { name: "react native" }, { name: "firebase" }],
+      nork: false,
       url: "#",
       key: 3,
     },
     {
-      image: "https://via.placeholder.com/400x400",
-      title: "Projeto 1",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      tech: [{ name: "html" }, { name: "sass" }, { name: "javascript" }],
-      url: "#",
+      image: "/project/primos.png",
+      title: "Primos",
+      description: "Desentupidora 24h com diversos serviços",
+      tech: [
+        { name: "html/sass" },
+        { name: "wordpress" },
+        { name: "javascript" },
+      ],
+      nork: true,
+      url: "https://primosdesentupidora.com.br/",
       key: 4,
     },
     {
       image: "https://via.placeholder.com/400x400",
-      title: "Projeto 1",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      tech: [{ name: "html" }, { name: "sass" }, { name: "javascript" }],
+      title: "Delphos",
+      description: "Desde 1989 prestando serviços administrativos",
+      tech: [
+        { name: "html/sass" },
+        { name: "wordpress" },
+        { name: "javascript" },
+      ],
+      nork: true,
       url: "#",
       key: 5,
     },
@@ -55,6 +77,7 @@ export default function Work() {
               title={item.title}
               description={item.description}
               tech={item.tech}
+              nork={item.nork}
               url={item.url}
               key={item.key}
             />

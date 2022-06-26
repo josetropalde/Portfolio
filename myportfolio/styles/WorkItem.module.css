@@ -33,12 +33,13 @@
 }
 .portfolio__technology ul {
   display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
   margin: 1rem 0;
   align-items: center;
 }
 .portfolio__technology ul li {
   background-color: #52525b;
-  margin: 0 .25rem;
   border-radius: 1rem;
   padding: .5rem .75rem;
   text-align: center;

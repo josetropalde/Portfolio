@@ -1,15 +1,25 @@
 import styles from "../../styles/WorkItem.module.css";
 
 export default function WorkItem(props) {
-  const { image, title, description, tech, url } = props;
+  const { image, title, description, tech, url, nork } = props;
+
+  const norkTrue = nork
+    ? "Desenvolvido em conjunto com a equipe Nork Digital"
+    : "";
+
   return (
     <div>
       <div className={styles.portfolio__item}>
         <img src={image} alt={title} />
+
         <div className={styles.portfolio__text}>
           <div>
             <h2>{title}</h2>
-            <p>{description}</p>
+            <p>
+              {description}
+              <br />
+              <strong>{norkTrue}</strong>
+            </p>
             <div className={styles.portfolio__technology}>
               <ul>
                 {tech.map((item, index) => {
