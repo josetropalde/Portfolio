@@ -1,0 +1,33 @@
+.button_submit {
+  position: relative;
+  transition: .3s;
+  @apply block m-auto bg-white p-3 text-black rounded-md mt-8
+}
+.loading span {
+  opacity: 0;
+  visibility: hidden;
+}
+.loading::after {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 2px solid transparent;
+  border-top-color: #000;
+  border-radius: 50%;
+  animation: loading-spinner 500ms linear infinite;
+}
+
+@keyframes loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

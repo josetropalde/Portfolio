@@ -1,17 +1,20 @@
 import { useState } from "react";
 import { sendContactMail } from "../../services/sendMail";
 import toast from "react-hot-toast";
-
+import styles from "../../styles/Form.module.css";
 export default function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const [loading, setLoading] = useState(false);
+
+  const loadEnabled = loading
+    ? `${styles.button_submit} ${styles.loading}`
+    : `${styles.button_submit}`;
+
   async function handleForm(event) {
     event.preventDefault();
-
-    if (loading) return;
 
     if (!name.trim() || !email.trim() || !message.trim()) {
       toast("Preencha todos os campos para enviar sua mensagem", {
@@ -76,12 +79,8 @@ export default function Form() {
           placeholder="Mensagem"
           className="w-full md:w-[500px] block m-auto p-2 rounded bg-transparent border border-zinc-500 outline-none resize-none"
         ></textarea>
-        <button
-          disabled={loading}
-          type="submit"
-          className="block m-auto bg-white p-3 text-black rounded-md mt-8"
-        >
-          Enviar Mensagem
+        <button disabled={loading} type="submit" className={loadEnabled}>
+          <span>Enviar Mensagem</span>
         </button>
       </form>
     </div>
