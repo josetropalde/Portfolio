@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
 
 export default async (req, res) => {
   try {
-    const { senderMail, userName, content } = JSON.parse(req.body);
+    const { senderMail, userName, content } = req.body;
 
     const message = {
       from: email,
