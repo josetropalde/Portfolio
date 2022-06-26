@@ -34,7 +34,7 @@ export default async (req, res) => {
         console.log("Message sent", info);
       }
     });
-    return res.status(200).json({ status: "Ok" });
+    return res.status(200);
   } catch (err) {
     return res.json({
       error: true,
