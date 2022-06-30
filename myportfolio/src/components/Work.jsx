@@ -4,6 +4,27 @@ import WorkItem from "./WorkItem";
 export default function Work() {
   const workData = [
     {
+      image: "/ogimage.png",
+      title: "Meu Portfólio",
+      description: "É aqui que eu mostro alguns dos meus trabalhos",
+      tech: [{ name: "Next" }, { name: "React" }, { name: "Tailwind" }],
+      nork: false,
+      url: "https://www.josehenrique.net/portfolio",
+      key: 1,
+      explore: false,
+    },
+    {
+      image: "/project/mybills.png",
+      title: "myBills",
+      description:
+        "Aplicativo mobile para nunca mais esquecer de pagar um boleto",
+      tech: [{ name: "react" }, { name: "react native" }, { name: "firebase" }],
+      nork: false,
+      url: "#",
+      key: 2,
+      explore: true,
+    },
+    {
       image: "/project/util.png",
       title: "Útilfornos",
       description: "Uma solução E-commerce para venda de fornos industriais",
@@ -14,7 +35,8 @@ export default function Work() {
       ],
       nork: true,
       url: "https://util.ind.br/",
-      key: 1,
+      key: 3,
+      explore: true,
     },
     {
       image: "/project/wecivil.png",
@@ -27,18 +49,10 @@ export default function Work() {
       ],
       nork: true,
       url: "https://wecivil.com.br/",
-      key: 2,
+      key: 4,
+      explore: true,
     },
-    {
-      image: "https://via.placeholder.com/400x400",
-      title: "myBills",
-      description:
-        "Aplicativo mobile para nunca mais esquecer de pagar um boleto",
-      tech: [{ name: "react" }, { name: "react native" }, { name: "firebase" }],
-      nork: false,
-      url: "#",
-      key: 3,
-    },
+
     {
       image: "/project/primos.png",
       title: "Primos",
@@ -50,10 +64,11 @@ export default function Work() {
       ],
       nork: true,
       url: "https://primosdesentupidora.com.br/",
-      key: 4,
+      key: 5,
+      explore: true,
     },
     {
-      image: "https://via.placeholder.com/400x400",
+      image: "/project/delphos.png",
       title: "Delphos",
       description: "Desde 1989 prestando serviços administrativos",
       tech: [
@@ -63,7 +78,46 @@ export default function Work() {
       ],
       nork: true,
       url: "#",
-      key: 5,
+      key: 6,
+      explore: true,
+    },
+    {
+      image: "/project/marcogloria.png",
+      title: "Marco Glória",
+      description: "Serviços de elétrica e automação há mais de 10 anos",
+      tech: [
+        { name: "html/sass" },
+        { name: "wordpress" },
+        { name: "javascript" },
+      ],
+      nork: true,
+      url: "https://marcogloria.com.br/",
+      key: 7,
+      explore: true,
+    },
+    {
+      image: "/project/hidraulicaemilio.png",
+      title: "Hidráulica Emílio",
+      description: "Há 65 resolvendo problemas hidráulicos",
+      tech: [
+        { name: "html/sass" },
+        { name: "wordpress" },
+        { name: "javascript" },
+      ],
+      nork: true,
+      url: "https://hidraulicaemilio.com.br/",
+      key: 8,
+      explore: true,
+    },
+    {
+      image: "/project/etiqueta.png",
+      title: "CredFashion",
+      description: "Moda feminina e masculina",
+      tech: [{ name: "Angular" }, { name: "Typescript" }, { name: "Ionic" }],
+      nork: true,
+      url: "https://etiquetamodas.com.br/",
+      key: 9,
+      explore: true,
     },
   ];
 
@@ -80,6 +134,7 @@ export default function Work() {
               nork={item.nork}
               url={item.url}
               key={item.key}
+              explore={item.explore}
             />
           );
         })}
