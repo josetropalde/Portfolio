@@ -10,7 +10,6 @@ export default function Work() {
       tech: [{ name: "Next" }, { name: "React" }, { name: "Tailwind" }],
       nork: false,
       url: "https://www.josehenrique.net/portfolio",
-      key: 1,
       explore: false,
     },
     {
@@ -21,7 +20,16 @@ export default function Work() {
       tech: [{ name: "react" }, { name: "react native" }, { name: "firebase" }],
       nork: false,
       url: "#",
-      key: 2,
+      explore: true,
+    },
+    {
+      image: "/project/w8.png",
+      title: "W8 Imobiliária",
+      description:
+        "A W8 é a principal imobilária de São Paulo para praias do Litoral Norte",
+      tech: [{ name: "Laravel" }, { name: "Blade" }, { name: "php" }],
+      nork: true,
+      url: "https://w8imobiliaria.com.br/",
       explore: true,
     },
     {
@@ -35,7 +43,6 @@ export default function Work() {
       ],
       nork: true,
       url: "https://util.ind.br/",
-      key: 3,
       explore: true,
     },
     {
@@ -49,7 +56,6 @@ export default function Work() {
       ],
       nork: true,
       url: "https://wecivil.com.br/",
-      key: 4,
       explore: true,
     },
 
@@ -64,7 +70,6 @@ export default function Work() {
       ],
       nork: true,
       url: "https://primosdesentupidora.com.br/",
-      key: 5,
       explore: true,
     },
     {
@@ -78,7 +83,6 @@ export default function Work() {
       ],
       nork: true,
       url: "#",
-      key: 6,
       explore: true,
     },
     {
@@ -92,7 +96,6 @@ export default function Work() {
       ],
       nork: true,
       url: "https://marcogloria.com.br/",
-      key: 7,
       explore: true,
     },
     {
@@ -106,7 +109,6 @@ export default function Work() {
       ],
       nork: true,
       url: "https://hidraulicaemilio.com.br/",
-      key: 8,
       explore: true,
     },
     {
@@ -116,7 +118,6 @@ export default function Work() {
       tech: [{ name: "Angular" }, { name: "Typescript" }, { name: "Ionic" }],
       nork: true,
       url: "https://etiquetamodas.com.br/",
-      key: 9,
       explore: true,
     },
   ];
@@ -133,7 +134,7 @@ export default function Work() {
               tech={item.tech}
               nork={item.nork}
               url={item.url}
-              key={item.key}
+              key={item.title}
               explore={item.explore}
             />
           );

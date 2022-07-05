@@ -5,9 +5,7 @@ export default function WorkItem(props) {
   console.log(explore);
   const exploreTrue = explore ? "inline-block" : "none";
 
-  const norkTrue = nork
-    ? "Desenvolvido em conjunto com a equipe Nork Digital"
-    : "";
+  const norkTrue = nork ? "Desenvolvido em conjunto com a equipe NorkTech" : "";
 
   return (
     <div>
