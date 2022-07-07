@@ -38,6 +38,7 @@ export default function Form() {
         },
       });
     } catch (err) {
+      setLoading(false);
       toast("Ocorreu um erro inesperado. Tente outra forma!", {
         style: {
           background: "#f87171",
