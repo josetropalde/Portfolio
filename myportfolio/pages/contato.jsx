@@ -18,7 +18,7 @@ export default function Contato() {
         <Form />
       </main>
 
-      <Footer />
+      <Footer welcome={false}/>
     </div>
   );
 }

@@ -63,7 +63,7 @@
   .header {
     display: flex;
     justify-content: center;
-    padding: 3rem 15%;  
+    padding: 2rem 15%;  
     text-align: start;
   }
   .header__menu {

@@ -46,7 +46,7 @@ export default function Home() {
         <Main />
       </main>
 
-      <Footer />
+      <Footer welcome={true}/>
     </div>
   );
 }

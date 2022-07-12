@@ -17,7 +17,7 @@ export default function Portfolio() {
         <Work />
       </main>
 
-      <Footer />
+      <Footer welcome={false} />
     </div>
   );
 }
