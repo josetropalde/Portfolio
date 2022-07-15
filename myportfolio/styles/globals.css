@@ -22,3 +22,16 @@ a {
 * {
   box-sizing: border-box;
 }
+  ::-webkit-scrollbar {
+  width: 1rem;
+}
+  ::-webkit-scrollbar-track {
+  background-color: #27272a;
+}
+::-webkit-scrollbar-thumb  {
+  background-color: #050506;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0c0c0d;
+}

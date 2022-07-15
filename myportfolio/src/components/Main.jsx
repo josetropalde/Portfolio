@@ -12,12 +12,12 @@ export default function Main() {
             José Henrique
           </span>
         </h1>
-        <p>
+        <p className="mt-6 lg:mt-20">
           Desenvolvedor Web, Mobile e UI/UX Designer, viciado em codar e
           resolver problemas de forma eficiente e tecnológica
-          <b>(nada de gambiarra)</b> desde 2021
+          <b> (nada de gambiarra)</b> desde 2021
         </p>
-        <p>
+        <p className="mt-6">
           Aqui você pode conferir <Link href="/portfolio">o meu trabalho</Link>{" "}
           e se gostar e precisar de alguma solução tecnológica,{" "}
           <Link href="/contato">entre em contato</Link>
