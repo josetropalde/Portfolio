@@ -70,7 +70,7 @@ export default function Work() {
       description: "Desde 1989 prestando serviços administrativos",
       tech: [{ name: "HTML/Sass" }, { name: "Wordpress" }, { name: "JS" }],
       nork: true,
-      url: "#",
+      url: "https://delphoscontabilidade.com.br/",
       explore: true,
     },
     {
