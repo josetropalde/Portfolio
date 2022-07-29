@@ -9,12 +9,20 @@ export default function Work() {
       description: "É aqui que eu mostro alguns dos meus trabalhos",
       tech: [{ name: "NextJS" }, { name: "ReactJS" }, { name: "Tailwind" }],
       nork: false,
-      url: "https://www.josehenrique.net/portfolio",
-      explore: false,
+      url: {
+        androidUrl: "",
+        iosUrl: "",
+        exploreUrl: "https://www.josehenrique.net/portfolio",
+      },
+      explore: {
+        android: false,
+        ios: false,
+        explore: false,
+      },
     },
     {
-      image: "/project/mybills.png",
-      title: "myBills",
+      image: "/project/yourbills.png",
+      title: "yourBills",
       description:
         "Aplicativo mobile para nunca mais esquecer de pagar um boleto",
       tech: [
@@ -23,8 +31,17 @@ export default function Work() {
         { name: "Firebase" },
       ],
       nork: false,
-      url: "#",
-      explore: false,
+      url: {
+        androidUrl:
+          "https://play.google.com/store/apps/details?id=com.yourbills",
+        iosUrl: "",
+        exploreUrl: "",
+      },
+      explore: {
+        android: true,
+        ios: false,
+        explore: false,
+      },
     },
     {
       image: "/project/w8.png",
@@ -33,8 +50,16 @@ export default function Work() {
         "A W8 é a principal imobilária de São Paulo para praias do Litoral Norte",
       tech: [{ name: "Laravel" }, { name: "Blade" }, { name: "PHP" }],
       nork: true,
-      url: "https://w8imobiliaria.com.br/",
-      explore: true,
+      url: {
+        androidUrl: "",
+        iosUrl: "",
+        exploreUrl: "https://w8imobiliaria.com.br/",
+      },
+      explore: {
+        android: false,
+        ios: false,
+        explore: true,
+      },
     },
     {
       image: "/project/util.png",
@@ -42,8 +67,16 @@ export default function Work() {
       description: "Uma solução E-commerce para venda de fornos industriais",
       tech: [{ name: "HTML/Sass" }, { name: "E-commerce" }, { name: "JS" }],
       nork: true,
-      url: "https://util.ind.br/",
-      explore: true,
+      url: {
+        androidUrl: "",
+        iosUrl: "",
+        exploreUrl: "https://util.ind.br/",
+      },
+      explore: {
+        android: false,
+        ios: false,
+        explore: true,
+      },
     },
     {
       image: "/project/wecivil.png",
@@ -51,8 +84,16 @@ export default function Work() {
       description: "Engenharia e construção personalizadas",
       tech: [{ name: "HTML/Sass" }, { name: "Wordpress" }, { name: "JS" }],
       nork: true,
-      url: "https://wecivil.com.br/",
-      explore: true,
+      url: {
+        androidUrl: "",
+        iosUrl: "",
+        exploreUrl: "https://wecivil.com.br/",
+      },
+      explore: {
+        android: false,
+        ios: false,
+        explore: true,
+      },
     },
 
     {
@@ -61,8 +102,16 @@ export default function Work() {
       description: "Desentupidora 24h com diversos serviços",
       tech: [{ name: "HTML/Sass" }, { name: "Wordpress" }, { name: "JS" }],
       nork: true,
-      url: "https://primosdesentupidora.com.br/",
-      explore: true,
+      url: {
+        androidUrl: "",
+        iosUrl: "",
+        exploreUrl: "https://primosdesentupidora.com.br/",
+      },
+      explore: {
+        android: false,
+        ios: false,
+        explore: true,
+      },
     },
     {
       image: "/project/delphos.png",
@@ -70,8 +119,16 @@ export default function Work() {
       description: "Desde 1989 prestando serviços administrativos",
       tech: [{ name: "HTML/Sass" }, { name: "Wordpress" }, { name: "JS" }],
       nork: true,
-      url: "https://delphoscontabilidade.com.br/",
-      explore: true,
+      url: {
+        androidUrl: "",
+        iosUrl: "",
+        exploreUrl: "https://delphoscontabilidade.com.br/",
+      },
+      explore: {
+        android: false,
+        ios: false,
+        explore: true,
+      },
     },
     {
       image: "/project/marcogloria.png",
@@ -79,8 +136,16 @@ export default function Work() {
       description: "Serviços de elétrica e automação há mais de 10 anos",
       tech: [{ name: "HTML/Sass" }, { name: "Wordpress" }, { name: "JS" }],
       nork: true,
-      url: "https://marcogloria.com.br/",
-      explore: true,
+      url: {
+        androidUrl: "",
+        iosUrl: "",
+        exploreUrl: "https://marcogloria.com.br/",
+      },
+      explore: {
+        android: false,
+        ios: false,
+        explore: true,
+      },
     },
     {
       image: "/project/hidraulicaemilio.png",
@@ -88,8 +153,16 @@ export default function Work() {
       description: "Há 65 resolvendo problemas hidráulicos",
       tech: [{ name: "HTML/Sass" }, { name: "Wordpress" }, { name: "JS" }],
       nork: true,
-      url: "https://hidraulicaemilio.com.br/",
-      explore: true,
+      url: {
+        androidUrl: "",
+        iosUrl: "",
+        exploreUrl: "https://hidraulicaemilio.com.br/",
+      },
+      explore: {
+        android: false,
+        ios: false,
+        explore: true,
+      },
     },
     {
       image: "/project/etiqueta.png",
@@ -97,8 +170,16 @@ export default function Work() {
       description: "Moda feminina e masculina",
       tech: [{ name: "Angular" }, { name: "Typescript" }, { name: "Ionic" }],
       nork: true,
-      url: "https://etiquetamodas.com.br/",
-      explore: true,
+      url: {
+        androidUrl: "",
+        iosUrl: "",
+        exploreUrl: "https://etiquetamodas.com.br/",
+      },
+      explore: {
+        android: false,
+        ios: false,
+        explore: true,
+      },
     },
   ];
 
